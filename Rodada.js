@@ -1,4 +1,4 @@
-import Jogo from 'Jogo.js';
+
 
 class Rodada{
 
@@ -11,8 +11,9 @@ class Rodada{
         this.jogos = new Object()
     }
 
-    adicionaJogoNaRodada(){
-        const newJogo = new Jogo(nrJogo,data,estadio,timeCasa,timeVisitante)
+    adicionaJogoNaRodada(nrJogo,data,estadio,timeCasa,timeVisitante){
+       const newJogo = new Jogo(nrJogo,data,estadio,timeCasa,timeVisitante)
+       this.jogos.jogo1 = newJogo.nrJogo;
     }
     
 

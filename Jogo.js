@@ -1,4 +1,4 @@
-export default class Jogo{
+class Jogo{
     constructor(name){
         this.estadio = "Estadio",
         this.diaHorarioJogo = new Date();
@@ -35,7 +35,7 @@ export default class Jogo{
 
 }
 
-const corpal = new Jogo("corXpal");
+const corpal = new Jogo("corXpal")
 console.log(corpal);
 console.log(corpal.nomeJogo);
 
